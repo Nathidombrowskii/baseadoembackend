@@ -7,9 +7,7 @@ this.gol = gol;
 }
 
 apresentar() {
-console.log(
-`Este jogador fez ${this.gol}`
-);
+console.log(`Este jogador fez ${this.gol}`);
 }
 }
 
@@ -24,11 +22,6 @@ console.log("tecnico:", `${this.tecnico}`);
 }
 }
 
-mostrarTime() {
-console.log("time:", `${this.nomeTime}`);
-console.log("tecnico:", `${this.tecnico}`);
-}
-
 let time = new timeFutebol(
 "Neymar",
 "Renato Gaúcho",
@@ -37,3 +30,4 @@ let time = new timeFutebol(
 );
 
 time.mostrarTime();
+time.apresentar();
